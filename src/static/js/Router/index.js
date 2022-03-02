@@ -39,7 +39,7 @@ export default class Router {
     );
     console.log("this is currenRouter", currentRouter);
     if (currentRouter.id === 0) {
-      const data = await Api.get("https://jsonplaceholder.typicode.com/posts", {
+      const data = await Api.get("https://jsonplaceholder.typicode.com/users", {
         method: "GET",
       });
       console.log("this is data,", data);
